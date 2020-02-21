@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   newPlayerform.addEventListener('submit', addNewPlayerFormSubmit);
 
   const deleteAllButton = document.querySelector('#delete-all');
-  deleteAllButton.addEventListener('click', deleteAllClick);
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const addNewPlayerFormSubmit = function (event) {
@@ -35,7 +35,7 @@ const createPlayer = function (form) {
   return playerListItem;
 }
 
-const deleteAllButton = function (event) {
+const handleDeleteAllClick = function (event) {
   const playerList = document.querySelector('#players-list');
   playerList.innerHTML = '';
 }
