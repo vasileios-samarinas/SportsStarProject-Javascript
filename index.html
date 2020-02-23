@@ -7,7 +7,7 @@
   <script src="js/app.js"></script>
 </head>
 <body>
-  <div class="kark">
+  <div>
   <form id="new-player-form">
     <label for="name" class="primary">Player Name</label>
     <input type="text" id="name" required/>
@@ -15,8 +15,8 @@
     <label for="sport" class="primary">Sport</label>
     <input type="text" id="sport" required/>
 
-
-    <label for="continent" class="primary">Continent</label>
+    <p>Select a continent</p>
+    <!-- <label for="continent" class="primary">Continent</label>
     <select id="continent">
       <option value="" disabled selected></option>
       <option value="Africa">Africa</option>
@@ -28,12 +28,49 @@
       <option value="Australia">Australia</option>
     </select>
     <input type="submit" value="save" class="button"/>
-  </form>
-    </div>
+  </form> -->
+  <div>
+  <input type="radio" id="Africa" name="continent" value="Africa"
+         checked>
+  <label for="continent">Africa</label>
+</div>
 
+<div>
+  <input type="radio" id="Asia" name="drone" value="Asia">
+  <label for="continent">Asia</label>
+</div>
+
+<div>
+  <input type="radio" id="Europe" name="continent" value="Europe">
+  <label for="continent">Europe</label>
+</div>
+
+<div>
+  <input type="radio" id="South America" name="continent" value="South America">
+  <label for="continent">South America</label>
+</div>
+
+<div>
+  <input type="radio" id="North America" name="continent" value="North America">
+  <label for="continent">North America</label>
+</div>
+
+<div>
+  <input type="radio" id="Antarctica" name="continent" value="Antarctica">
+  <label for="continent">Antarctica</label>
+</div>
+
+<div>
+  <input type="radio" id="Australia" name="continent" value="Australia">
+  <label for="continent">Australia</label>
+</div>
+
+    </div>
+  </select>
+  <input type="submit" value="save" class="button"/>
+</form>
   <button id="delete-all" class="button">Delete All</button>
   <h1>Players List</h1>
   <ul id="players-list"></ul>
-
 </body>
 </html>
