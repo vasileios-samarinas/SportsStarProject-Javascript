@@ -10,6 +10,7 @@ const addNewPlayerFormSubmit = function (event) {
   event.preventDefault();
 
   const playerListItem = createPlayer(event.target);
+  console.log(event.target)
   const playerList= document.querySelector('#players-list');
   playerList.appendChild(playerListItem);
 
@@ -24,11 +25,11 @@ const createPlayer = function (form) {
   name.textContent = form.name.value;
   playerListItem.appendChild(name);
 
-  const sport = document.createElement('h3');
+  const sport = document.createElement('h2');
   sport.textContent = form.sport.value;
   playerListItem.appendChild(sport);
 
-  const continent = document.createElement('p');
+  const continent = document.createElement('h2');
   continent.textContent = form.continent.value;
   playerListItem.appendChild(continent);
 

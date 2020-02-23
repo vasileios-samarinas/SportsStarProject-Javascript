@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Sports Player List</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <script src="js/app.js"></script>
 </head>
 <body>
+  <div class="kark">
   <form id="new-player-form">
     <label for="name" class="primary">Player Name</label>
     <input type="text" id="name" required/>
 
     <label for="sport" class="primary">Sport</label>
     <input type="text" id="sport" required/>
+
 
     <label for="continent" class="primary">Continent</label>
     <select id="continent">
@@ -24,10 +27,11 @@
       <option value="Antarctica">Antarctica</option>
       <option value="Australia">Australia</option>
     </select>
-    <input type="submit" value="save"/>
+    <input type="submit" value="save" class="button"/>
   </form>
+    </div>
 
-  <button id="delete-all">Delete All</button>
+  <button id="delete-all" class="button">Delete All</button>
   <h1>Players List</h1>
   <ul id="players-list"></ul>
 
